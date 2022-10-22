@@ -72,6 +72,10 @@ config LOGO_SUPERH_CLUT224
 
 comment "unc3nsored logos"
 
+config LOGO_GENTOO_CLUT224
+	bool "224-color Gentoo logo"
+	default n
+
 config LOGO_TUZ_VGA16
 	bool "16-color Tuz logo"
 	default n

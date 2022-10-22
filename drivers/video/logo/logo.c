@@ -106,6 +106,10 @@ const struct linux_logo * __ref fb_find_logo(int depth)
 		logo = &logo_superh_clut224;
 #endif
 
+#ifdef CONFIG_LOGO_GENTOO_CLUT224
+		/* Gentoo logo */
+		logo = &logo_gentoo_clut224;
+#endif
 #ifdef CONFIG_LOGO_TUZ_CLUT224
 		/* Tuz logo */
 		logo = &logo_tuz_clut224;

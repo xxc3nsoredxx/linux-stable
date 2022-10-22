@@ -14,6 +14,7 @@ obj-$(CONFIG_LOGO_SUPERH_MONO)		+= logo_superh_mono.o
 obj-$(CONFIG_LOGO_SUPERH_VGA16)		+= logo_superh_vga16.o
 obj-$(CONFIG_LOGO_SUPERH_CLUT224)	+= logo_superh_clut224.o
 
+obj-$(CONFIG_LOGO_GENTOO_CLUT224)	+= logo_gentoo_clut224.o
 obj-$(CONFIG_LOGO_TUZ_VGA16)		+= logo_tuz_vga16.o
 obj-$(CONFIG_LOGO_TUZ_CLUT224)		+= logo_tuz_clut224.o
 

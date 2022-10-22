@@ -47,6 +47,12 @@ extern const struct linux_logo logo_superh_clut224;
 extern const struct linux_logo logo_spe_clut224;
 
 /*
+ * Gentoo signet
+ * https://www.gentoo.org/inside-gentoo/artwork/gentoo-logo.html
+ */
+extern const struct linux_logo logo_gentoo_clut224;
+
+/*
  * Tuz logos from 2.6.29
  * Long live the Tazmanian Devil!
  */
