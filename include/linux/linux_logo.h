@@ -46,6 +46,13 @@ extern const struct linux_logo logo_superh_vga16;
 extern const struct linux_logo logo_superh_clut224;
 extern const struct linux_logo logo_spe_clut224;
 
+/*
+ * Tuz logos from 2.6.29
+ * Long live the Tazmanian Devil!
+ */
+extern const struct linux_logo logo_tuz_vga16;
+extern const struct linux_logo logo_tuz_clut224;
+
 extern const struct linux_logo *fb_find_logo(int depth);
 #ifdef CONFIG_FB_LOGO_EXTRA
 extern void fb_append_extra_logo(const struct linux_logo *logo,

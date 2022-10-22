@@ -68,6 +68,11 @@ const struct linux_logo * __ref fb_find_logo(int depth)
 		/* SuperH Linux logo */
 		logo = &logo_superh_vga16;
 #endif
+
+#ifdef CONFIG_LOGO_TUZ_VGA16
+		/* Tuz logo */
+		logo = &logo_tuz_vga16;
+#endif
 	}
 	
 	if (depth >= 8) {
@@ -99,6 +104,11 @@ const struct linux_logo * __ref fb_find_logo(int depth)
 #ifdef CONFIG_LOGO_SUPERH_CLUT224
 		/* SuperH Linux logo */
 		logo = &logo_superh_clut224;
+#endif
+
+#ifdef CONFIG_LOGO_TUZ_CLUT224
+		/* Tuz logo */
+		logo = &logo_tuz_clut224;
 #endif
 	}
 	return logo;

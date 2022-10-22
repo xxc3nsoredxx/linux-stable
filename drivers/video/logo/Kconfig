@@ -16,6 +16,8 @@ config FB_LOGO_EXTRA
 	depends on FB=y
 	default y if SPU_BASE
 
+comment "Higher bit depths take precedence over lower (where possible). Later logos take precedence over earlier."
+
 config LOGO_LINUX_MONO
 	bool "Standard black and white Linux logo"
 	default y
@@ -67,5 +69,15 @@ config LOGO_SUPERH_CLUT224
 	bool "224-color SuperH Linux logo"
 	depends on SUPERH
 	default y
+
+comment "unc3nsored logos"
+
+config LOGO_TUZ_VGA16
+	bool "16-color Tuz logo"
+	default n
+
+config LOGO_TUZ_CLUT224
+	bool "224-color Tuz logo"
+	default n
 
 endif # LOGO
